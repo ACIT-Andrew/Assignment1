@@ -2,7 +2,7 @@ body{
     font-family: 'Exo', sans-serif;
     margin: 0;
     height: 100vmax;
-    /* width: 100vmax; */
+    color: #314949;
 }
 
 /* TOTAL AREA */
@@ -20,18 +20,22 @@ aside{
     flex: 0 0 20%;
     align-items: center;
 }
+aside h2{
+    text-align: center;
+}
 aside ul{
     list-style-type: square;
     display: flex;
     flex-direction: column;
     align-self: start;
+    padding-left: 20%;
 }
 
 
 /******* MAIN SECTIONS ******/
 
 #main-grid{
-    background-color: #E7CEB1;
+    background-color: #ECD9C5;
     flex: 1 1 80%;
     display: grid;
     /* display: inline-flex;
