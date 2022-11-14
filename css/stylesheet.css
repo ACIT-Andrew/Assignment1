@@ -1,4 +1,86 @@
 body{
     font-family: 'Exo', sans-serif;
+    margin: 0;
+    height: 100vmax;
+    width: 100vmax;
 }
 
+/* Total Area */
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100vmax;
+    width: 100vmax;
+}
+
+/* Side Menu */
+aside{
+    background-color: #F9F3EC;
+    display: inline-flex;
+    flex-direction: column;
+    /* flex: 0 0 20%; */
+    width: 20%;
+}
+
+
+/* Main Areas */
+#main-grid{
+    background-color: #E7CEB1;
+    flex: 1 2 80%;
+    display: grid;
+    /* display: inline-flex;
+    flex-direction: column; */
+    grid-template-rows: 50px 50px 2fr 1fr;
+    padding: 5px;
+}
+        /* Header title */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        /* Nav links */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+    padding: 0 10px;
+}
+        /* Section edit-area */
+.edit-area{
+    display: flex;
+    flex-direction: column;
+}
+.new-dark-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input{
+    width: 90%;
+    height: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+.input textarea{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.save-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+}
+.save-area button{
+    padding: 0px 10px;
+    margin: 0 5px;
+}

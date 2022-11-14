@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <title>Note Taker</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <aside class="mynotes">
-            <h2>My Notes</h2>
-            <ul><li>note one</li><li>note two</li></ul>
-        </aside>
-        <section>
-            <header>
-                <h1>Take Better Notes</h1>
-                <ul><li>About</li><li>Docs</li></ul>
-            </header>
-            <section>
+      <aside class="main-side">
+        <h2>My Notes</h2>
+        <ul>
+          <li>note one</li>
+          <li>note two</li>
+        </ul>
+      </aside>
+      <section id="main-grid">
+        <header>
+          <h1>Take Better Notes</h1>
+        </header>
+        <nav class="header-links">
+          <ul>
+            <li>About</li>
+            <li>Docs</li>
+          </ul>
+        </nav>
 
-            </section>
-            <footer>
-                <h3>Keep in Touch</h3>
-            </footer>
+        <section class="edit-area">
+          <div class="new-dark-buttons">
+            <button class="new" type="button">New Note</button>
+            <button class="dark" type="button">Dark Theme</button>
+          </div>
+          
+          <div class="input">
+          <textarea rows="" cols="">Placeholder Text</textarea>
+          </div>
+
+          <div class="save-area">
+            <button id="save" type="submit">Save</button>
+            <button id="cancel" type="reset">Cancel</button>
+          </div>
         </section>
-    </main>
-</body>
 
+        <footer>
+          <h3>Keep in Touch</h3>
+          <img src="img/linkedin.webp" alt="LinkedIn" height="30px">
+          <img src="img/Internet.webp" alt="Internet" height="30px">
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>
