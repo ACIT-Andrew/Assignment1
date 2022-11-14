@@ -28,7 +28,7 @@ aside ul{
 }
 
 
-/******* MAIN AREAS ******/
+/******* MAIN SECTIONS ******/
 
 #main-grid{
     background-color: #E7CEB1;
@@ -36,17 +36,17 @@ aside ul{
     display: grid;
     /* display: inline-flex;
     flex-direction: column; */
-    grid-template-rows: repeat(3, 50px) 200px 50px 1fr;
+    grid-template-rows: repeat(3, 60px) 200px 60px 1fr;
     padding: 5px;
 }
 
-        /* Header title */
+        /* HEADER TITLE */
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-        /* Nav links */
+        /* NAV LINKS */
 nav{
     display: flex;
     flex-direction: row;
@@ -59,17 +59,30 @@ nav li{
     display: inline;
     padding: 0 10px;
 }
-        /* Section edit-area */
-/* .edit-area{
-    display: flex;
-    flex-direction: column;
-} */
+
+    /* NEW - DARK BUTTONS AREA */
 .new-dark-buttons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 }
+.new-dark-buttons button{
+    font-family: 'Exo', sans-serif;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.new{
+    background-color: #4B7171;
+}
+.dark{
+    background-color: #6F6A87;
+}
+
+
+    /* INPUT AREA */
 .input{
     display: flex;
     flex-direction: column;
@@ -78,10 +91,17 @@ nav li{
     margin: 10px;
 }
 .input textarea{
+    font-family: 'Exo', sans-serif;
     width: 95%;
     height: 100%;
     padding: 10px;
+    resize: none;
+    background-color: #F9F3EC;
+    border: 3px solid lightskyblue;
 }
+
+
+    /* SAVE - CANCEL AREA */
 .save-buttons{
     display: flex;
     flex-direction: row;
@@ -89,10 +109,22 @@ nav li{
     padding: 10px;
 }
 .save-buttons button{
-    padding: 0px 10px;
+    font-family: 'Exo', sans-serif;
+    border: 0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 20px;
     margin: 0 5px;
 }
+.save{
+    background-color: #4B7171;
+}
+.cancel{
+    background-color: #D9827C;
+}
 
+
+    /* FOOTER AREA */
 footer{
     display: inline-flex;
     flex-direction: column;
