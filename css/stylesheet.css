@@ -2,37 +2,44 @@ body{
     font-family: 'Exo', sans-serif;
     margin: 0;
     height: 100vmax;
-    width: 100vmax;
+    /* width: 100vmax; */
 }
 
-/* Total Area */
+/* TOTAL AREA */
 main {
     display: flex;
     flex-direction: row;
     height: 100vmax;
-    width: 100vmax;
 }
 
-/* Side Menu */
+/***** SIDE MENU *****/
 aside{
     background-color: #F9F3EC;
     display: inline-flex;
     flex-direction: column;
-    /* flex: 0 0 20%; */
-    width: 20%;
+    flex: 0 0 20%;
+    align-items: center;
+}
+aside ul{
+    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
 }
 
 
-/* Main Areas */
+/******* MAIN AREAS ******/
+
 #main-grid{
     background-color: #E7CEB1;
-    flex: 1 2 80%;
+    flex: 1 1 80%;
     display: grid;
     /* display: inline-flex;
     flex-direction: column; */
-    grid-template-rows: 50px 50px 2fr 1fr;
+    grid-template-rows: repeat(3, 50px) 200px 50px 1fr;
     padding: 5px;
 }
+
         /* Header title */
 header{
     display: flex;
@@ -53,10 +60,10 @@ nav li{
     padding: 0 10px;
 }
         /* Section edit-area */
-.edit-area{
+/* .edit-area{
     display: flex;
     flex-direction: column;
-}
+} */
 .new-dark-buttons{
     display: flex;
     flex-direction: row;
@@ -64,23 +71,30 @@ nav li{
     padding: 10px;
 }
 .input{
-    width: 90%;
-    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
     margin: 10px;
-    padding: 10px;
 }
 .input textarea{
-    width: 100%;
+    width: 95%;
     height: 100%;
     padding: 10px;
 }
-.save-area{
+.save-buttons{
     display: flex;
     flex-direction: row;
     justify-content: end;
     padding: 10px;
 }
-.save-area button{
+.save-buttons button{
     padding: 0px 10px;
     margin: 0 5px;
+}
+
+footer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
