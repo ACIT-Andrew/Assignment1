@@ -1,3 +1,4 @@
+/********* MOBILE DESIGN ******/
 body{
     font-family: 'Exo', sans-serif;
     margin: 0;
@@ -5,7 +6,7 @@ body{
     color: #314949;
 }
 
-/* TOTAL AREA */
+/**** TOTAL AREA ****/
 main {
     display: flex;
     flex-direction: row;
@@ -18,7 +19,7 @@ aside{
     display: inline-flex;
     flex-direction: column;
     flex: 0 0 20%;
-    align-items: center;
+    /* align-items: center; */
 }
 aside h2{
     text-align: center;
@@ -27,8 +28,9 @@ aside ul{
     list-style-type: square;
     display: flex;
     flex-direction: column;
-    align-self: start;
-    padding-left: 20%;
+    /* text-align: left; */
+    /* align-self: left; */
+    padding-left: 30%;
 }
 
 
@@ -38,9 +40,7 @@ aside ul{
     background-color: #ECD9C5;
     flex: 1 1 80%;
     display: grid;
-    /* display: inline-flex;
-    flex-direction: column; */
-    grid-template-rows: repeat(3, 60px) 200px 60px 1fr;
+    grid-template-rows: repeat(3, 6%) 3fr 6% 1fr;
     padding: 5px;
 }
 
@@ -139,4 +139,17 @@ footer{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+}
+
+/***** MEDIA QUERY - DESKTOP ******/
+@media screen and (min-width: 501px){
+    body{
+        height: 100vh;
+    }
+    aside ul{
+        padding-left: 15%;
+    }
+    #main-grid{
+        grid-template-rows: repeat(3, 60px) 1fr 60px 40%;
+    }
 }
