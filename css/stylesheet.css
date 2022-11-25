@@ -2,7 +2,7 @@
 body{
     font-family: 'Exo', sans-serif;
     margin: 0;
-    height: 100vmax;
+    height: 100vh;
     color: #314949;
 }
 /* Dark Mode */
@@ -14,7 +14,7 @@ body.dark{
 main {
     display: flex;
     flex-direction: row;
-    height: 100vmax;
+    height: 100vh;
 }
 
 /***** SIDE MENU *****/
@@ -117,7 +117,6 @@ nav li{
     padding: 10px;
     resize: none;
     background-color: #f5f2ef;
-    background-color: #CED4DA;
     border: 0;
     border-radius: 10px;
 }
@@ -168,9 +167,6 @@ footer{
 
 /***** MEDIA QUERY - DESKTOP ******/
 @media screen and (min-width: 501px){
-    body{
-        height: 100vh;
-    }
     aside ul{
         padding-left: 15%;
     }
