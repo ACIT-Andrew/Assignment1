@@ -41,7 +41,7 @@ let hide = (e)=>{
     cancelBtn.setAttribute('hidden', '')
 }
 let reset = (e)=>{
-    if (textBox.hasAttribute('hidden')){
+    if (!textBox.hasAttribute('hidden')){
         textBox.value = ''
     }
     textBox.removeAttribute('hidden', '')
@@ -68,7 +68,7 @@ saveBtn.addEventListener('click', saveLog)
 
 // Open note
 let open = (e)=>{
-    console.log(e.target.textContent)
+    // console.log(e.target.textContent)
     for (let i of notesArray){
         if (e.target.textContent === i.title){
             textBox.value = i.body
