@@ -6,6 +6,7 @@ let notesArray = [
 const body = document.querySelector('body')
 const aside = document.querySelector('aside')
 const notesList = document.querySelector('aside ul')
+let notesItem = document.querySelectorAll('aside li')
 const mainGrid = document.querySelector('#main-grid')
 const newDarkBtns = document.querySelectorAll('.new-dark-buttons button')
 const newNote = document.querySelector('button.new')
@@ -50,7 +51,7 @@ let reset = (e)=>{
 cancelBtn.addEventListener('click', hide)
 newNote.addEventListener('click', reset)
 
-
+// Save new note
 let saveLog = (e)=>{
     let save = prompt('Please enter a title for your new note.', '')
     let newSave = {}
@@ -62,7 +63,16 @@ let saveLog = (e)=>{
         li.textContent = save
         notesList.append(li)
     }
-    console.log(newSave)
-    console.log(notesArray)
 }
 saveBtn.addEventListener('click', saveLog)
+
+// Open note
+let open = (e)=>{
+    console.log(e.target.textContent)
+    for (let i of notesArray){
+        if (e.target.textContent === i.title){
+            textBox.value = i.body
+        }
+    }
+}
+notesList.addEventListener('click', open)
