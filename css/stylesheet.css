@@ -4,17 +4,12 @@ body{
     margin: 0;
     height: 100vh;
     color: #314949;
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 /* Dark Mode */
 body.dark{
     color: #F8F9FA;
-}
-
-/**** TOTAL AREA ****/
-main {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
 }
 
 /***** SIDE MENU *****/
@@ -22,8 +17,8 @@ aside{
     background-color: #F9F3EC;
     display: inline-flex;
     flex-direction: column;
-    flex: 0 0 20%;
-    /* align-items: center; */
+    /* flex: 0 0 20%; */
+    grid-column: 1;
 }
 aside.dark{
     background-color: #6C757D;
@@ -43,15 +38,15 @@ aside ul{
 
 /******* MAIN SECTIONS ******/
 
-section#main-grid{
+div#main-grid{
     background-color: #ECD9C5;
-    flex: 1 1 80%;
+    grid-column: 2;
     display: grid;
-    grid-template-rows: repeat(3, 6%) 40% 6% 1fr;
+    grid-template-rows: 10% repeat(2, 7%) 1fr 6% 1fr;
     padding: 5px;
 }
 /* Dark Mode */
-section#main-grid.dark{
+div#main-grid.dark{
     background-color: #212529;
 }
 
@@ -60,6 +55,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0.7em;
 }
         /* NAV LINKS */
 nav{
@@ -112,12 +108,12 @@ nav li{
     align-items: center;
     padding: 10px 0;
     margin: 10px;
+    max-height: 300px;
 }
 .input textarea{
     font-family: 'Exo', sans-serif;
     width: 95%;
-    height: 300px;
-    max-height: 100%;
+    height: 100%;
     padding: 10px;
     resize: none;
     background-color: #f5f2ef;
@@ -162,11 +158,14 @@ footer{
 }
 
 /***** MEDIA QUERY - DESKTOP ******/
-@media screen and (min-width: 501px){
+@media screen and (min-width: 501px)and(orientation:landscape){
     aside ul{
         padding-left: 15%;
     }
     #main-grid{                                    
-        grid-template-rows: repeat(3, 60px) 1fr 60px 40%;
+        grid-template-rows: 10% repeat(2, 8%) 1fr 60px 40%;
+    }
+    header{
+        font-size: 1em;
     }
 }
