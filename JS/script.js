@@ -6,7 +6,6 @@ let notesArray = [
 const body = document.querySelector('body')
 const aside = document.querySelector('aside')
 const notesList = document.querySelector('aside ul')
-let notesItem = document.querySelectorAll('aside li')
 const mainGrid = document.querySelector('#main-grid')
 const newDarkBtns = document.querySelectorAll('.new-dark-buttons button')
 const newNote = document.querySelector('button.new')
@@ -55,7 +54,7 @@ newNote.addEventListener('click', reset)
 let saveLog = (e)=>{
     let save = prompt('Please enter a title for your new note.', '')
     let newSave = {}
-    li = document.createElement('li')
+    let li = document.createElement('li')
     if(save !== null){
         newSave.title = save
         newSave.body = textBox.value
