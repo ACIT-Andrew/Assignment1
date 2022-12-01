@@ -3,7 +3,7 @@ let notesArray = [
     {title:"note two",body:"This is the second note."}
 ]
 
-const body = document.querySelector('body')
+const body = document.body
 const aside = document.querySelector('aside')
 const notesList = document.querySelector('aside ul')
 const mainGrid = document.querySelector('#main-grid')
