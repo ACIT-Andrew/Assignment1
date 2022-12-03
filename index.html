@@ -11,11 +11,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Exo:wght@100;300&display=swap"
       rel="stylesheet">
+      <script src="js/script.js" defer></script>
     <title>Note Taker</title>
   </head>
 
   <body>
-    <main>
       <aside class="main-side">
         <h2>My Notes</h2>
         <ul>
@@ -23,7 +23,7 @@
           <li>note two</li>
         </ul>
       </aside>
-      <section id="main-grid">
+      <div id="main-grid">
         <header>
           <h1>Take Better Notes</h1>
         </header>
@@ -33,17 +33,16 @@
             <li>Docs</li>
           </ul>
         </nav>
-
-        <section class="new-dark-buttons">
+        <section class="new-dark-buttons allbuttons">
           <button class="new" type="button">New Note</button>
-          <button class="dark" type="button">Dark Theme</button>
+          <button class="theme" type="button">Dark Theme</button>
         </section>
 
-        <section class="input">
+        <main class="input">
           <textarea placeholder="This is a placeholder"></textarea>
-        </section>
+        </main>
 
-        <section class="save-buttons">
+        <section class="save-buttons allbuttons">
           <button class="save" type="submit">Save</button>
           <button class="cancel" type="reset">Cancel</button>
         </section>
@@ -52,12 +51,11 @@
           <h3>Keep in Touch</h3>
           <span class="icons">
             <a href=""
-              ><img src="img/linkedin.webp" alt="LinkedIn" height="30px"></a>
+              ><img src="img/linkedin.webp" alt="LinkedIn" height="30"></a>
             <a href=""
-              ><img src="img/Internet.webp" alt="Internet" height="30px"></a>
+              ><img src="img/Internet.webp" alt="Internet" height="30"></a>
           </span>
         </footer>
-      </section>
-    </main>
+      </div>
   </body>
 </html>
